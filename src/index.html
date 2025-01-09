@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pak Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .navbar {
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        padding: 8px;
+        flex-direction: row;
+        gap: 50px;
+        margin-right: 0px;
+      }
+      .navbar-inside {
+        display: flex;
+
+        gap: 20px;
+        padding-left: 20px;
+
+        animation: move-header 10s linear infinite;
+      }
+      @keyframes move-header {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      .navbar:hover .navbar-inside {
+        animation-play-state: paused;
+      }
+    </style>
+  </head>
+  <body class="">
+    <header class="bg-black text-white">
+      <div class="navbar">
+        <div class="navbar-inside">
+          <a href="" class="underline underline-offset-2 decoration-white">
+            Free to Start, Built to Succeed
+          </a>
+          <span class="inline-flex align-text-bottom">. </span>
+          <a href="" class=""> Start, Scale, Succeed with KSA Drop </a>
+          <span class="inline-flex align-text-bottom">. </span
+          ><a href="" class=""> Free to Start, Built to Succeed </a>
+          <span class="inline-flex align-text-bottom">. </span>
+        </div>
+        <div class="navbar-inside">
+          <a href="" class="underline underline-offset-2 decoration-white">
+            Start, Scale, Succeed with KSA Drop
+          </a>
+          <span class="inline-flex align-text-bottom">. </span>
+          <a href="" class=""> Start, Scale, Succeed with KSA Drop </a>
+          <span class="inline-flex align-text-bottom">. </span>
+          <a href="" class=""> Start, Scale, Succeed with KSA Drop </a>
+          <span class="inline-flex align-text-bottom">. </span>
+        </div>
+      </div>
+    </header>
+    <div class="p-10">
+      <nav>
+        <div class="flex items-center justify-between">
+          <!--child one in which logo and anchor button-->
+          <!--order 1-->
+          <div class="sm:hidden block">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-menu"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </div>
+          <!--order 2-->
+          <div class="flex space-x-10 items-center">
+            <div class="font-bold text-2xl =">PAK DROP</div>
+
+            <div class="space-x-6 font-bold sm:block hidden">
+              <a href="" class="underline">Home</a>
+              <a href="" class="">All products</a>
+              <a href="" class="">How it works ?</a>
+              <a href="" class="">FAQ,s</a>
+            </div>
+          </div>
+          <!-- child two in which two child  search  and profile icon-->
+
+          <div class="flex flex-col-reverse sm:flex-row gap-8 items-center">
+            <!--in this div serch input two first child-->
+            <div
+              class="bg-gray-200 hidden sm:flex hover:bg-white inline w-full sm:w-max rounded-md px-2 py-[6px] font-bold flex items-center gap-4 hover:border-[1px] border-gray-300 transition-all duration-75"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="gray"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <div class="relative w-full sm:w-max">
+                <!-- Input Field -->
+                <input
+                  class="bg-transparent peer focus:outline-0 text-sm placeholder:text-black w-full"
+                  id="bar"
+                  type="text"
+                  placeholder="Search"
+                />
+                <!-- Label -->
+                <label
+                  class="absolute top-1/2 left-0 -translate-y-1/2 text-black text-sm transition-all duration-300 peer-placeholder-shown:text-black peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500"
+                  for="bar"
+                >
+                  Search
+                </label>
+              </div>
+            </div>
+
+            <!--two second child profile icon  -->
+            <!--ordre 3 -->
+            <div class="items-center flex gap-4 hover:text-gray-400">
+              <div class="hidden sm:block ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-user"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <span
+                class="w-[1px] h-7 hidden  sm:block  bg-gray-400 inline-flex align-middle"
+              ></span>
+              <div class="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-shopping-cart"
+                >
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path
+                    d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--for responsive crete serch input double  -->
+      <div
+        class="bg-gray-200 mt-8    hover:bg-white w-full  rounded-md px-2 py-[6px] font-bold flex items-center gap-4 hover:border-[1px] border-gray-300 transition-all duration-75"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="gray"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-search"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <div class="relative w-full sm:w-max">
+          <!-- Input Field -->
+          <input
+            class="bg-transparent peer focus:outline-0 text-sm placeholder:text-black w-full"
+            id="bar"
+            type="text"
+            placeholder="Search"
+          />
+          <!-- Label -->
+          <label
+            class="absolute top-1/2 left-0 -translate-y-1/2 text-black text-sm transition-all duration-300 peer-placeholder-shown:text-black peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500"
+            for="bar"
+          >
+            Search
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
